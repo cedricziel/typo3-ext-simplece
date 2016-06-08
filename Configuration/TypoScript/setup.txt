@@ -1,0 +1,25 @@
+# Page template
+config.no_cache = 1
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+    layoutRootPaths.10 = EXT:simplece/Resources/Private/Layouts/Page/
+    partialRootPaths.10 = EXT:simplece/Resources/Private/Partials/Page/
+    templateRootPaths.10 = EXT:simplece/Resources/Private/Templates/Page/
+
+    templateName = Default
+
+    variables {
+        content < styles.content.get
+    }
+}
+
+# New element: DoubleText
+tt_content {
+    # New record type 'simplece_doubletext' on table 'tt_content'
+    simplece_doubletext < lib.fluidContent
+    simplece_doubletext {
+        templateName = DoubleText
+        templateRootPaths.100 = EXT:simplece/Resources/Private/Templates/Content/
+    }
+}

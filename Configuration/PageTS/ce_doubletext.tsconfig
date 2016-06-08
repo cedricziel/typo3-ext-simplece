@@ -1,0 +1,20 @@
+# New content element wizard
+mod.wizards.newContentElement.wizardItems {
+    # Add it to the 'common' section
+    common.elements {
+        # Use the element name consistently
+        simplece_doubletext {
+            iconIdentifier = content-textpic
+            # LLL is possible!
+            title = Simple CE: DoubleText
+            description = A simple element with two rich text editors
+            # Important: Preset the CType value to the system recognizes our element
+            tt_content_defValues {
+                CType = simplece_doubletext
+            }
+        }
+    }
+
+    # Important: Add it to the list of shown element types
+    common.show := addToList(simplece_doubletext)
+}
