@@ -68,16 +68,16 @@ call_user_func(
         // Tell the TCA, what field should be available in the new content element
         $GLOBALS['TCA']['tt_content']['types']['simplece_doubletext'] = [
             'showitem'         => '
-				--palette--;'.$frontendLanguageFilePrefix.'palette.general;general,
-				--palette--;'.$frontendLanguageFilePrefix.'palette.header;header,
+				--palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
+				--palette--;' . $frontendLanguageFilePrefix . 'palette.header;header,
 				bodytext;Text 1,
 				bodytext2;Text 2,
-			--div--;'.$frontendLanguageFilePrefix.'tabs.appearance,
-				layout;'.$frontendLanguageFilePrefix.'layout_formlabel,
-				--palette--;'.$frontendLanguageFilePrefix.'palette.appearanceLinks;appearanceLinks,
-			--div--;'.$frontendLanguageFilePrefix.'tabs.access,
-				hidden;'.$frontendLanguageFilePrefix.'field.default.hidden,
-				--palette--;'.$frontendLanguageFilePrefix.'palette.access;access,
+			--div--;' . $frontendLanguageFilePrefix . 'tabs.appearance,
+				layout;' . $frontendLanguageFilePrefix . 'layout_formlabel,
+				--palette--;' . $frontendLanguageFilePrefix . 'palette.appearanceLinks;appearanceLinks,
+			--div--;' . $frontendLanguageFilePrefix . 'tabs.access,
+				hidden;' . $frontendLanguageFilePrefix . 'field.default.hidden,
+				--palette--;' . $frontendLanguageFilePrefix . 'palette.access;access,
 		',
             // Add rich text editors to both bodytext columns
             'columnsOverrides' => [
